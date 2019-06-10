@@ -6,6 +6,9 @@ I took out the secret_key, sendgrid_api_key, and sendgrid_password so if you do 
 #User Instructions
 
 In Terminal:
+
 (path of folder) ```bash -pipenv shell ```
+
 (virtual environment) (path of folder) ```bash  pipenv install django ```
+
 (virtual environemtn) (path of folder) ```bash code . ```
