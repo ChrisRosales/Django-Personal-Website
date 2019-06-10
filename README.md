@@ -21,6 +21,7 @@ In Terminal:
 
 Run the commands:
 
-```pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
 
 python manage.py runserver```
