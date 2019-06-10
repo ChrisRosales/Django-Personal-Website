@@ -7,7 +7,7 @@ I took out the secret_key, sendgrid_api_key, and sendgrid_password so if you do 
 
 # Setup Instructions
 
-In Git Bash, copy ```bash git clone https://github.com/ChrisRosales/Django-Personal-Website.git```
+In Git Bash, copy ```git clone https://github.com/ChrisRosales/Django-Personal-Website.git```
 
 In Terminal:
 
@@ -19,6 +19,8 @@ In Terminal:
 
 # Installation and Running
 
-Run the command git clone <repository-url> to have this repository locally in your computer
-change into the new directory
-Run the command python manage.py runserver
+Run the commands:
+
+```pip install -r requirements.txt
+
+python manage.py runserver```
