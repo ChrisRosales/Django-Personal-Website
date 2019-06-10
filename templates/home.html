@@ -1,0 +1,306 @@
+
+
+{% block content %}
+{% load static %}
+{% load i18n %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-109064262-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio webpage">
+	<meta name="author" content="Chris Rosales">
+
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+	<link rel="shortcut icon" href="{% static 'Django-Personal-Website/images/updatedphoto.ico' %}" />
+	<title>Web Developer</title>
+
+	<!-- CSS -->
+	<link href="{% static 'Django-Personal-Website/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Django-Personal-Website/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'Django-Personal-Website/css/animate.css" rel="stylesheet' %}">
+
+	<!-- Custom styles CSS -->
+	<link href="{% static 'Django-Personal-Website/css/style.css' %}" rel="stylesheet" media="screen">
+
+    <script src="{% static 'Django-Personal-Website/js/modernizr.custom.js' %}"></script>
+
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+    <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Hello, my name is Chris Rosales and I am a</div>
+			<h1>Computer Scientist and Software Developer</h1>
+			<div class="start">changing the world one step at a time</div>
+		</div>
+
+		<a href="#services">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-2x"></i>
+				</span>
+			</div>
+		</a>
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Chris Rosales</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">About me</a></li>
+            <li><a href="#portfolio">Works</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+
+  <!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ABOUT ME</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<p>I’m a super curious guy. I spend a lot of time coding and developing software, but there’s also a lot more to it. I desire to become an Entrepreneur with my hard work and skills in coding and business.</p>
+							<p>Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.</p>
+							<p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development.</p>
+
+ 							<a href="https://drive.google.com/file/d/1WTPMz19Imtpuh7HQJ6xxfP5BHQkAS1ct/view" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="pfblock-header wow fadeInUp">
+						<img id="myphoto" src="{% static 'Django-Personal-Website/images/profilepic.jpg' %}"  style="border-radius: 100%;filter:grayscale(30%);">
+					</div>
+				</div>
+		</div><!-- .container -->
+
+		<div class="skills col-xs-12">
+				<h2 class="pfblock-title">MY SKILLS</h2>
+				<div class="pfblock-line"></div>
+
+				<div class="row">
+					<div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
+					<div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
+					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
+					<div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
+					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
+				</div>
+				<div class="row">
+					<div  class="devicon-d3js-plain  col-xs-15"><span>D3</span></div>
+					<div  class="devicon-react-original  col-xs-15"><span>REACT</span></div>
+					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODE</span></div>
+					<div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
+					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Services end -->
+
+
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My works</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+				{% for project in list_projects|slice:":2" %}
+					<div class="card col-xs-12 col-sm-5 col-md-5">
+							<div class="grid wow zoomIn">
+
+								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
+									{% with 'Django-Personal-Website/images/'|add:project.img_name as image_static %}
+											<img class="card-img-top" src="{% static image_static %}"></a>
+									{% endwith %}
+								</figure>
+
+								<div class="card-block">
+									<h2 class="card-title">{{ project.title }}</h2>
+									<p class="card-text">{{ project.description }}</p>
+									<div class="tools">
+										{% for tool in project.tools.split %}
+											<span>{{ tool }}</span>
+										{% endfor %}
+									</div>
+								</div>
+
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+
+
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">WANT TO CONTACT ME?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						For Business Inquires, Questions, Or Just Want To Send Me A Message:
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">Contact Me</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="pfblock-header">
+					<h2 class="pfblock-title">Contact</h2>
+					<div class="pfblock-line"></div>
+					<div class="start">
+						Send me an Email, I'll get back to you as soon as possible!
+					</div>
+				</div>
+
+		</div><!-- .row -->
+
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+				{% include 'contact_form.html' %}
+			</div><!-- .row -->
+
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.linkedin.com/in/chris-rosales-a2a2bb188/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/ChrisRosales" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:10rosachri@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="skype:live:c60d0b2622cc1a6?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li>
+					</ul>
+
+					<p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+
+	<!-- Javascript files -->
+
+	<script src="{% static 'Django-Personal-Website/js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/wow.min.js' %}"></script>
+  <script src="{% static 'Django-Personal-Website/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'Django-Personal-Website/js/jquery.cbpQTRotator.js' %}"></script>
+	<script src="{% static 'Django-Personal-Website/js/custom.js' %}"></script>
+
+</body>
+</html>
+{% endblock  %}
