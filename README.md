@@ -1,6 +1,8 @@
 # Django-Personal-Website
 Django Development of my Personal Website
 
+Link to live version: http://chrisrosales.io
+
 I took out the secret_key, sendgrid_api_key, and sendgrid_password so if you do reference or use part of my website make sure to update those to your own
 
 #User Instructions
